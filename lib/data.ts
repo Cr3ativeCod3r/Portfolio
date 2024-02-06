@@ -85,30 +85,37 @@ export const projectsData = [
  
 ] as const;
 
-export const skillsData = [
-  "CSS3",
-  "HTML5",
-  "JavaScript",
-  "React",
-  "Redux",
-  "TypeScript",
+// export const skillsData = [
+//   "CSS3",
+//   "HTML5",
+//   "JavaScript",
+//   "React",
+//   "Redux",
+//   "TypeScript",
 
-  "Express.js",
-  "MongoDB",
-  "MySQL",
-  "Node.js",
+//   "Express.js",
+//   "MongoDB",
+//   "MySQL",
+//   "Node.js",
 
-  "AWS",
-  "Docker",
-  "Linux",
-  "NGINX",
+//   "AWS",
+//   "Docker",
+//   "Linux",
+//   "NGINX",
 
-  "C",
-  "C++",
-  "Java",
-  "PHP",
-  "Python",
-  "Photoshop",
+//   "C",
+//   "C++",
+//   "Java",
+//   "PHP",
+//   "Python",
+//   "Photoshop",
   
-] as const;
+// ] as const;
 
+export const skillsData = {
+  frontend: ["CSS3", "HTML5", "JavaScript", "React", "Redux", "TypeScript"],
+  backend: ["Express.js", "MongoDB", "MySQL", "Node.js"],
+  devops: ["AWS", "Docker", "Linux", "NGINX"],
+  programming: ["C", "C++", "Java", "PHP", "Python"],
+  others: ["Photoshop"]
+}as const;

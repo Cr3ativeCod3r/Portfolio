@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 text-zinc-200">
       I am 21 years old and I am a full-stack developer. I enjoy working with various technologies, and currently, I am self-learning by working on projects and studying computer science. I am particularly interested in programming in the context of gambling - I love games of chance, and probability seems to be a fascinating field. I would like to combine my mathematical skills with programming in this area.
       </p>
 

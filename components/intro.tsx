@@ -37,7 +37,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="mt-20 h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -62,11 +62,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span >Hello i'm Kamil </span> I'm a IT student
-        <span > at Lublin university of technology </span> 
+        <span className="text-slate-700">Hello i'm Kamil  I'm a IT student
+      at Lublin university of technology
         I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span>Nodejs</span>.
+        building <span className="italic">sites & apps</span>. My focus is
+        Nodejs</span>.
       </motion.h1>
 
       <motion.div

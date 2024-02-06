@@ -32,7 +32,7 @@ export default function Skills() {
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
        
-
+{/* 
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -47,7 +47,30 @@ export default function Skills() {
           >
             {skill}
           </motion.li>
-        ))}
+        ))} */}
+
+{Object.entries(skillsData).map(([category, skills], index) => (
+  <div key={index}>
+    <h2>{category}</h2>
+    <ul>
+      {skills.map((skill, skillIndex) => (
+        <motion.li
+          className="bg-zinc-200 mt-1 borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+          key={skillIndex}
+          variants={fadeInAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once: true,
+          }}
+          custom={skillIndex}
+        >
+          {skill}
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+))}
 
 
       </ul>
