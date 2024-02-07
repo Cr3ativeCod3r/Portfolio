@@ -11,6 +11,8 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  basePath: '/app'
+  
 };
 
 module.exports = nextConfig;
